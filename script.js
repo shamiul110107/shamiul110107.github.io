@@ -136,27 +136,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
   counters.forEach((el) => counterObserver.observe(el));
 
-  // ─── Contact Form ─────────────────────────────────
-  const form = document.getElementById('contactForm');
-
-  form.addEventListener('submit', (e) => {
-    e.preventDefault();
-
-    const btn = form.querySelector('button[type="submit"]');
-    const originalHTML = btn.innerHTML;
-
-    btn.innerHTML = '<i class="fa-solid fa-check"></i> Message Sent!';
-    btn.style.background = '#00d4aa';
-    btn.disabled = true;
-
-    setTimeout(() => {
-      btn.innerHTML = originalHTML;
-      btn.style.background = '';
-      btn.disabled = false;
-      form.reset();
-    }, 3000);
-  });
-
   // ─── Smooth Scroll for All Anchors ────────────────
   document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     anchor.addEventListener('click', (e) => {

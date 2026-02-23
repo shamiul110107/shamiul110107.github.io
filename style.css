@@ -1047,6 +1047,11 @@ img {
   align-items: start;
 }
 
+.contact-info-standalone {
+  max-width: 560px;
+  margin: 0 auto;
+}
+
 .contact-intro {
   font-size: 1.1rem;
   color: var(--color-text-secondary);

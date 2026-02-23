@@ -950,6 +950,12 @@ img {
   font-size: 0.95rem;
 }
 
+.resume-card .btn {
+  display: inline-flex;
+  padding: 12px 32px;
+  font-size: 0.95rem;
+}
+
 /* ============================================
    Contact Section
    ============================================ */

@@ -952,6 +952,8 @@ img {
 
 .resume-card .btn {
   display: inline-flex;
+  align-items: center;
+  justify-content: center;
   padding: 12px 32px;
   font-size: 0.95rem;
 }

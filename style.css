@@ -747,7 +747,7 @@ img {
    ============================================ */
 .certifications-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 24px;
 }
 
@@ -760,6 +760,33 @@ img {
   gap: 20px;
   align-items: flex-start;
   transition: var(--transition);
+}
+
+.cert-card-link {
+  text-decoration: none;
+  color: inherit;
+  position: relative;
+}
+
+.cert-card-link:hover {
+  border-color: var(--color-primary);
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-glow);
+}
+
+.cert-card-link .cert-card-arrow {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+  opacity: 0;
+  transition: var(--transition);
+}
+
+.cert-card-link:hover .cert-card-arrow {
+  opacity: 1;
+  color: var(--color-primary);
 }
 
 .cert-card:hover {
@@ -779,6 +806,16 @@ img {
   color: var(--color-primary);
   font-size: 1.3rem;
   flex-shrink: 0;
+}
+
+.cert-icon-microsoft {
+  background: rgba(0, 164, 239, 0.15);
+  color: #00a4ef;
+}
+
+.cert-icon-snowflake {
+  background: rgba(41, 181, 232, 0.15);
+  color: #29b5e8;
 }
 
 .cert-info h3 {

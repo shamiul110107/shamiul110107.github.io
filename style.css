@@ -611,6 +611,20 @@ img {
   background: var(--color-primary-glow);
 }
 
+.skill-category-ai {
+  background: linear-gradient(135deg, var(--color-surface), rgba(108, 99, 255, 0.08));
+  border-color: rgba(108, 99, 255, 0.3);
+}
+
+.skill-category-ai h3 i {
+  color: var(--color-accent);
+}
+
+.skill-category-ai:hover {
+  border-color: var(--color-accent);
+  box-shadow: 0 0 40px var(--color-accent-glow);
+}
+
 /* ============================================
    Experience / Timeline
    ============================================ */

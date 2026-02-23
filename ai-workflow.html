@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Workflow — Md Shamiul Islam</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="ai-workflow.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar scrolled" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">SI<span class="accent">.</span></a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="index.html#projects" class="nav-link">Projects</a></li>
+        <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+        <li><a href="index.html#resume" class="nav-link nav-btn">Resume</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="ai-hero">
+    <div class="container">
+      <div class="ai-hero-badge"><i class="fa-solid fa-wand-magic-sparkles"></i> AI Workflow</div>
+      <h1>AI-Powered iOS Development</h1>
+      <p class="ai-hero-subtitle">
+        AI is an integral part of my daily development workflow — not just for autocomplete,
+        but as an intelligent coding partner that helps with architecture, development, testing,
+        debugging, and documentation.
+      </p>
+    </div>
+  </section>
+
+  <!-- Tools Section -->
+  <section class="section" id="tools">
+    <div class="container">
+      <h2 class="section-title">Tools & Ecosystem</h2>
+      <div class="ai-tools-grid">
+        <div class="ai-tool-card">
+          <div class="ai-tool-icon"><i class="fa-solid fa-code"></i></div>
+          <h3>Cursor IDE</h3>
+          <p>Primary development environment with AI coding agent capabilities</p>
+        </div>
+        <div class="ai-tool-card">
+          <div class="ai-tool-icon"><i class="fa-solid fa-robot"></i></div>
+          <h3>Claude Code & Xcode AI</h3>
+          <p>Used for comparison, validation, and alternative AI perspectives</p>
+        </div>
+        <div class="ai-tool-card">
+          <div class="ai-tool-icon"><i class="fa-solid fa-comments"></i></div>
+          <h3>ChatGPT</h3>
+          <p>Problem solving, writing, and prompt optimization</p>
+        </div>
+        <div class="ai-tool-card">
+          <div class="ai-tool-icon"><i class="fa-solid fa-palette"></i></div>
+          <h3>Google AI Studio & Stitch</h3>
+          <p>UI and icon generation for rapid prototyping</p>
+        </div>
+        <div class="ai-tool-card">
+          <div class="ai-tool-icon"><i class="fa-brands fa-bitbucket"></i></div>
+          <h3>Bitbucket MCP</h3>
+          <p>PR creation and commit message generation</p>
+        </div>
+        <div class="ai-tool-card">
+          <div class="ai-tool-icon"><i class="fa-brands fa-figma"></i></div>
+          <h3>Figma MCP</h3>
+          <p>UI design integration directly into the development flow</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Workflow Steps -->
+  <section class="section section-alt" id="workflow">
+    <div class="container">
+      <h2 class="section-title">My AI Workflow</h2>
+      <div class="ai-workflow-steps">
+
+        <div class="ai-step">
+          <div class="ai-step-number">01</div>
+          <div class="ai-step-content">
+            <h3><i class="fa-solid fa-sitemap"></i> Architecture Enforcement via AI Rules</h3>
+            <p>I maintain custom rule files that enforce Clean Architecture principles automatically, ensuring proper dependency direction, layer separation, and coding standards.</p>
+            <ul class="ai-step-list">
+              <li>Dependencies always point inward (Presentation → Domain ← Data)</li>
+              <li>Layer-specific constraints for Domain, Data, and Presentation</li>
+              <li>ViewModels follow ObservableObject pattern</li>
+              <li>UI state managed via enums</li>
+              <li>Strict unit testing conventions with XCTest</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="ai-step">
+          <div class="ai-step-number">02</div>
+          <div class="ai-step-content">
+            <h3><i class="fa-solid fa-layer-group"></i> Feature Development with Clean Architecture</h3>
+            <p>AI helps scaffold full features across all layers while maintaining separation of concerns.</p>
+            <ul class="ai-step-list">
+              <li><strong>Domain layer:</strong> Models, repository protocols, and use cases</li>
+              <li><strong>Data layer:</strong> Repository implementations and DTO mapping</li>
+              <li><strong>Presentation layer:</strong> ViewModels and SwiftUI views</li>
+              <li><strong>Unit tests:</strong> Full coverage including edge cases and async flows</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="ai-step">
+          <div class="ai-step-number">03</div>
+          <div class="ai-step-content">
+            <h3><i class="fa-solid fa-arrows-rotate"></i> Safe Refactoring Strategy</h3>
+            <p>AI assists in refactoring legacy code incrementally, ensuring stability while improving structure.</p>
+            <ul class="ai-step-list">
+              <li>Preserve existing code during transition</li>
+              <li>Introduce new architecture alongside old code</li>
+              <li>Gradually migrate logic</li>
+              <li>Validate each step before proceeding</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="ai-step">
+          <div class="ai-step-number">04</div>
+          <div class="ai-step-content">
+            <h3><i class="fa-solid fa-vial"></i> Unit Test Generation</h3>
+            <p>Automated test scaffolding with comprehensive coverage strategies.</p>
+            <ul class="ai-step-list">
+              <li>Automatic mock and stub creation</li>
+              <li>Structured test cases (one behavior per test)</li>
+              <li>Proper async testing using XCTestExpectation</li>
+              <li>Coverage of success, failure, and edge cases</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="ai-step">
+          <div class="ai-step-number">05</div>
+          <div class="ai-step-content">
+            <h3><i class="fa-solid fa-magnifying-glass-chart"></i> Code Review & Debugging</h3>
+            <p>AI acts as a second reviewer, catching architectural violations and helping debug issues efficiently.</p>
+            <ul class="ai-step-list">
+              <li>Diff-based review before commits</li>
+              <li>Error tracing and root cause analysis</li>
+              <li>Automated PR descriptions using templates</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Best Practices -->
+  <section class="section" id="best-practices">
+    <div class="container">
+      <h2 class="section-title">Best Practices</h2>
+      <div class="ai-practices-grid">
+        <div class="ai-practice">
+          <div class="ai-practice-icon"><i class="fa-solid fa-scroll"></i></div>
+          <h4>Persistent AI Rules</h4>
+          <p>Use persistent AI rules instead of repeated prompts</p>
+        </div>
+        <div class="ai-practice">
+          <div class="ai-practice-icon"><i class="fa-solid fa-layer-group"></i></div>
+          <h4>Layer by Layer</h4>
+          <p>Generate code layer by layer for clean separation</p>
+        </div>
+        <div class="ai-practice">
+          <div class="ai-practice-icon"><i class="fa-solid fa-eye"></i></div>
+          <h4>Always Review</h4>
+          <p>Always review AI output before merging</p>
+        </div>
+        <div class="ai-practice">
+          <div class="ai-practice-icon"><i class="fa-solid fa-code-branch"></i></div>
+          <h4>Version Control Rules</h4>
+          <p>Version control AI rules alongside your code</p>
+        </div>
+        <div class="ai-practice">
+          <div class="ai-practice-icon"><i class="fa-solid fa-syringe"></i></div>
+          <h4>Dependency Injection</h4>
+          <p>Use dependency injection everywhere for testability</p>
+        </div>
+        <div class="ai-practice">
+          <div class="ai-practice-icon"><i class="fa-solid fa-stairs"></i></div>
+          <h4>Incremental Refactoring</h4>
+          <p>Prefer incremental refactoring over big rewrites</p>
+        </div>
+      </div>
+
+      <div class="ai-quote">
+        <blockquote>
+          The key to success is treating AI as a disciplined pair programmer. You define the standards, and AI accelerates execution while maintaining quality.
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- Back to Home -->
+  <section class="section section-alt">
+    <div class="container" style="text-align: center;">
+      <a href="index.html" class="btn btn-primary"><i class="fa-solid fa-arrow-left"></i> Back to Portfolio</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <a href="index.html" class="footer-logo">SI<span class="accent">.</span></a>
+        <div class="footer-socials">
+          <a href="https://github.com/shamiul110107" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="https://linkedin.com/in/shamiul110107" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="mailto:shamiulcse.pust@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+        <p class="footer-copy">&copy; 2026 Md Shamiul Islam. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const navToggle = document.getElementById('navToggle');
+    const navMenu = document.getElementById('navMenu');
+    navToggle.addEventListener('click', () => {
+      navToggle.classList.toggle('active');
+      navMenu.classList.toggle('open');
+    });
+    navMenu.querySelectorAll('.nav-link').forEach(link => {
+      link.addEventListener('click', () => {
+        navToggle.classList.remove('active');
+        navMenu.classList.remove('open');
+      });
+    });
+
+    const revealTargets = document.querySelectorAll(
+      '.ai-tool-card, .ai-step, .ai-practice, .ai-quote'
+    );
+    revealTargets.forEach(el => el.classList.add('reveal'));
+    const observer = new IntersectionObserver(
+      entries => entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); }),
+      { threshold: 0.15, rootMargin: '0px 0px -40px 0px' }
+    );
+    revealTargets.forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>

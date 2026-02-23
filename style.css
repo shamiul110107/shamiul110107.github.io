@@ -893,10 +893,6 @@ img {
   background: var(--color-bg);
 }
 
-.project-image img.project-img-screenshot {
-  object-fit: cover;
-  padding: 0;
-}
 
 .project-image-placeholder {
   width: 100%;

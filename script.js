@@ -85,7 +85,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // ─── Scroll Reveal ────────────────────────────────
   const revealTargets = document.querySelectorAll(
     '.skill-category, .timeline-item, .project-card, .about-grid, ' +
-    '.contact-grid, .resume-card, .detail-card'
+    '.contact-grid, .resume-card, .detail-card, .cert-card'
   );
 
   revealTargets.forEach((el) => el.classList.add('reveal'));

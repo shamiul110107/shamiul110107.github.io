@@ -2,10 +2,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // ─── Typing Effect ────────────────────────────────
   const titles = [
-    'iOS Developer',
-    'Swift & SwiftUI Enthusiast',
+    'Senior Mobile Developer',
+    'iOS Expert | Swift & SwiftUI',
+    'Kotlin Multiplatform (KMP) Developer',
     'Clean Architecture Advocate',
-    'Mobile App Builder',
+    'Tech Enthusiast',
   ];
   let titleIndex = 0;
   let charIndex = 0;

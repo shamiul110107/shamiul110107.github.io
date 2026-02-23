@@ -818,6 +818,11 @@ img {
   color: #29b5e8;
 }
 
+.cert-icon-udemy {
+  background: rgba(168, 85, 247, 0.15);
+  color: #a855f7;
+}
+
 .cert-info h3 {
   font-size: 1.05rem;
   font-weight: 700;

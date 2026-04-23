@@ -1,0 +1,228 @@
+/* Year Review page — full-viewport rows */
+.review-hero {
+  padding: 140px 0 48px;
+  text-align: center;
+}
+
+.review-hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 20px;
+  border-radius: var(--radius-full);
+  background: var(--color-primary-glow);
+  border: 1px solid rgba(108, 99, 255, 0.3);
+  color: var(--color-primary);
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 24px;
+  letter-spacing: 0.03em;
+}
+
+.review-hero h1 {
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  margin-bottom: 16px;
+}
+
+.review-hero-subtitle {
+  max-width: 560px;
+  margin: 0 auto;
+  font-size: 1.05rem;
+  color: var(--color-text-secondary);
+  line-height: 1.8;
+}
+
+.review-page-section {
+  padding-bottom: 0;
+}
+
+.year-review-page .review-content {
+  margin-top: 0;
+}
+
+.review-content__toolbar {
+  padding: 8px 0 16px;
+}
+
+.review-content__toolbar .review-actions {
+  margin-bottom: 0;
+}
+
+/* Full-screen rows */
+.review-row {
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: clamp(56px, 12vh, 120px) 24px;
+  border-top: 1px solid var(--color-border);
+}
+
+.review-content > .review-row:nth-child(even) {
+  background: var(--color-bg-alt);
+}
+
+.review-content > .review-row:nth-child(odd) {
+  background: var(--color-bg);
+}
+
+.review-row__inner {
+  width: 100%;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.review-row__eyebrow {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--color-primary);
+  margin-bottom: 12px;
+}
+
+.review-row__title {
+  font-size: clamp(1.75rem, 4.5vw, 2.75rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1.15;
+  margin-bottom: 28px;
+  color: var(--color-text);
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.review-row__title i {
+  color: var(--color-primary);
+  font-size: 0.85em;
+}
+
+.review-row__pull {
+  font-size: clamp(1.05rem, 2.2vw, 1.25rem);
+  line-height: 1.65;
+  color: var(--color-text-secondary);
+  margin: -12px 0 28px;
+  max-width: 52ch;
+}
+
+/* Stat chips */
+.review-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 36px;
+}
+
+.review-stats--solo {
+  justify-content: center;
+}
+
+.review-stat {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 20px 22px;
+  min-width: 140px;
+  flex: 1 1 140px;
+  max-width: 220px;
+  box-shadow: var(--shadow-card);
+}
+
+.review-stat--xl {
+  max-width: none;
+  flex: 1 1 280px;
+  padding: 28px 32px;
+}
+
+.review-stat__value {
+  display: block;
+  font-size: clamp(1.5rem, 3.5vw, 2.5rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  color: var(--color-accent);
+  line-height: 1.1;
+  margin-bottom: 8px;
+}
+
+.review-stat__label {
+  display: block;
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-text-secondary);
+  line-height: 1.4;
+}
+
+.review-hl {
+  color: var(--color-accent);
+  font-weight: 600;
+  padding: 0.1em 0.35em;
+  margin: 0 -0.05em;
+  border-radius: 6px;
+  background: rgba(0, 212, 170, 0.12);
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+}
+
+.review-row--summary {
+  background: radial-gradient(ellipse 80% 60% at 50% 0%, var(--color-primary-glow), transparent 55%),
+    var(--color-bg) !important;
+}
+
+.review-row--goals {
+  border-top: 1px solid rgba(0, 212, 170, 0.25);
+  background: linear-gradient(180deg, rgba(0, 212, 170, 0.06) 0%, var(--color-bg-alt) 45%) !important;
+}
+
+.year-review-page .review-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.year-review-page .review-list li {
+  position: relative;
+  padding-left: 22px;
+  margin-bottom: 18px;
+  color: var(--color-text);
+  font-size: clamp(1rem, 1.8vw, 1.125rem);
+  line-height: 1.65;
+  opacity: 0.92;
+}
+
+.year-review-page .review-list li:last-child {
+  margin-bottom: 0;
+}
+
+.year-review-page .review-list li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.65em;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--color-primary);
+  box-shadow: 0 0 12px var(--color-primary-glow);
+}
+
+.review-row--goals {
+  padding-bottom: clamp(80px, 15vh, 140px);
+}
+
+@media (max-width: 600px) {
+  .review-stat {
+    max-width: none;
+    flex: 1 1 100%;
+  }
+
+  .review-stat--xl {
+    text-align: center;
+  }
+}

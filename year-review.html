@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Year Review — Md Shamiul Islam</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="year-review.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+</head>
+<body class="year-review-page">
+  <nav class="navbar scrolled" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">SI<span class="accent">.</span></a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="index.html#projects" class="nav-link">Projects</a></li>
+        <li><a href="ai-workflow.html" class="nav-link">AI Workflow</a></li>
+        <li><a href="recent-learning.html" class="nav-link">Recent Learning</a></li>
+        <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+        <li><a href="index.html#resume" class="nav-link nav-btn">Resume</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="review-hero">
+    <div class="container">
+      <div class="review-hero-badge"><i class="fa-solid fa-chart-line"></i> Year Review</div>
+      <h1>2025 Year Review</h1>
+      <p class="review-hero-subtitle">
+        Private summary from my 2025 year review. Enter the password below to view.
+      </p>
+    </div>
+  </section>
+
+  <section class="section review-page-section" id="year-review">
+    <div class="container">
+      <div class="review-gate" id="reviewGate">
+        <div class="review-gate-card">
+          <i class="fa-solid fa-lock review-gate-icon" aria-hidden="true"></i>
+          <form id="reviewUnlockForm" class="review-gate-form" autocomplete="off">
+            <label class="review-gate-label" for="reviewPassword">Password</label>
+            <input
+              type="password"
+              id="reviewPassword"
+              name="reviewPassword"
+              class="review-gate-input"
+              placeholder="Enter password"
+              required
+            />
+            <button type="submit" class="btn btn-primary review-gate-btn">Unlock</button>
+            <p class="review-gate-error" id="reviewGateError" role="alert" hidden>Incorrect password.</p>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="review-content" id="reviewContent" hidden>
+      <div class="container review-content__toolbar">
+        <div class="review-actions">
+          <button type="button" class="btn btn-outline btn-sm" id="reviewLockAgain">
+            <i class="fa-solid fa-lock"></i> Lock again
+          </button>
+        </div>
+      </div>
+
+      <article class="review-row review-row--summary reveal">
+        <div class="review-row__inner">
+          <p class="review-row__eyebrow">Overview</p>
+          <h2 class="review-row__title"><i class="fa-solid fa-star" aria-hidden="true"></i> Key Achievements Summary</h2>
+          <div class="review-stats" role="presentation">
+            <div class="review-stat">
+              <span class="review-stat__value">99.99%</span>
+              <span class="review-stat__label">Crash-free rate</span>
+            </div>
+            <div class="review-stat">
+              <span class="review-stat__value">21.3% → 56.4%</span>
+              <span class="review-stat__label">Unit test coverage</span>
+            </div>
+            <div class="review-stat">
+              <span class="review-stat__value">KMP</span>
+              <span class="review-stat__label">BPS &amp; shared architecture</span>
+            </div>
+            <div class="review-stat">
+              <span class="review-stat__value">AI</span>
+              <span class="review-stat__label">Daily dev workflow</span>
+            </div>
+          </div>
+          <ul class="review-list">
+            <li>Delivered multiple features on time with <span class="review-hl">full ownership</span></li>
+            <li>Improved app stability to <span class="review-hl">99.99% crash-free</span> rate</li>
+            <li>Increased unit test coverage from <span class="review-hl">21.3%</span> to <span class="review-hl">56.4%</span></li>
+            <li>Applied <span class="review-hl">Clean Architecture</span> across multiple modules</li>
+            <li>Designed and improved UI using <span class="review-hl">SwiftUI</span></li>
+            <li>Worked on <span class="review-hl">Kotlin Multiplatform (KMP)</span> including <span class="review-hl">BPS</span> project</li>
+            <li>Adopted <span class="review-hl">AI-driven development</span> to improve productivity</li>
+            <li>Received <span class="review-hl">manager appreciation</span> for knowledge sharing session</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="review-row reveal">
+        <div class="review-row__inner">
+          <p class="review-row__eyebrow">Delivery</p>
+          <h2 class="review-row__title">Regular Delivery &amp; Ownership</h2>
+          <p class="review-row__pull">End-to-end ownership — fewer surprises in production.</p>
+          <ul class="review-list">
+            <li>Delivered features on time with <span class="review-hl">end-to-end ownership</span></li>
+            <li>Reduced rework by ensuring <span class="review-hl">clear understanding of requirements</span></li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="review-row reveal">
+        <div class="review-row__inner">
+          <p class="review-row__eyebrow">Quality</p>
+          <h2 class="review-row__title">App Stability</h2>
+          <div class="review-stats review-stats--solo">
+            <div class="review-stat review-stat--xl">
+              <span class="review-stat__value">99.99%</span>
+              <span class="review-stat__label">Crash-free users</span>
+            </div>
+          </div>
+          <ul class="review-list">
+            <li>Analyzed <span class="review-hl">crash reports</span> and fixed root causes</li>
+            <li>Achieved <span class="review-hl">99.99% crash-free</span> rate, improving user experience</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="review-row reveal">
+        <div class="review-row__inner">
+          <p class="review-row__eyebrow">Architecture</p>
+          <h2 class="review-row__title">Refactoring &amp; Clean Architecture</h2>
+          <p class="review-row__pull"><span class="review-hl">Clean Architecture</span> on legacy and new work — less tech debt over time.</p>
+          <ul class="review-list">
+            <li>Refactored existing features using <span class="review-hl">Clean Architecture</span></li>
+            <li>Applied Clean Architecture in new features to <span class="review-hl">reduce technical debt</span></li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="review-row reveal">
+        <div class="review-row__inner">
+          <p class="review-row__eyebrow">Product</p>
+          <h2 class="review-row__title">SwiftUI Development</h2>
+          <p class="review-row__pull">Screens and <span class="review-hl">reusable components</span> with consistent UI.</p>
+          <ul class="review-list">
+            <li>Designed and redesigned multiple screens using <span class="review-hl">SwiftUI</span></li>
+            <li>Built reusable components and improved <span class="review-hl">UI consistency</span></li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="review-row reveal">
+        <div class="review-row__inner">
+          <p class="review-row__eyebrow">Testing</p>
+          <h2 class="review-row__title">Unit Testing &amp; Code Quality</h2>
+          <div class="review-stats review-stats--solo">
+            <div class="review-stat review-stat--xl">
+              <span class="review-stat__value">21.3% → 56.4%</span>
+              <span class="review-stat__label">Code coverage growth</span>
+            </div>
+          </div>
+          <ul class="review-list">
+            <li>Increased code coverage from <span class="review-hl">21.3%</span> to <span class="review-hl">56.4%</span></li>
+            <li>Added unit tests for <span class="review-hl">existing and new</span> features</li>
+            <li>Improved reliability and <span class="review-hl">reduced regressions</span></li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="review-row reveal">
+        <div class="review-row__inner">
+          <p class="review-row__eyebrow">Growth</p>
+          <h2 class="review-row__title">Learning &amp; Certifications</h2>
+          <div class="review-stats">
+            <div class="review-stat">
+              <span class="review-stat__value">5</span>
+              <span class="review-stat__label">Snowflake learning paths</span>
+            </div>
+            <div class="review-stat">
+              <span class="review-stat__value">2</span>
+              <span class="review-stat__label">KMP practice projects</span>
+            </div>
+          </div>
+          <ul class="review-list">
+            <li>Udemy: <span class="review-hl">Multi-Modular Ecommerce App (KMP)</span></li>
+            <li>Udemy: <span class="review-hl">Complete Kotlin Development Masterclass</span></li>
+            <li>Completed <span class="review-hl">5 learning paths</span> in Snowflake</li>
+            <li>Built <span class="review-hl">2 practice projects</span> using Kotlin Multiplatform</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="review-row reveal">
+        <div class="review-row__inner">
+          <p class="review-row__eyebrow">Cross-platform</p>
+          <h2 class="review-row__title">Kotlin Multiplatform (KMP)</h2>
+          <p class="review-row__pull"><span class="review-hl">BPS</span> production work + shared architecture patterns.</p>
+          <ul class="review-list">
+            <li>Worked on <span class="review-hl">BPS project</span> using KMP</li>
+            <li>Gained hands-on experience in <span class="review-hl">cross-platform architecture</span></li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="review-row reveal">
+        <div class="review-row__inner">
+          <p class="review-row__eyebrow">Workflow</p>
+          <h2 class="review-row__title">AI-Driven Development</h2>
+          <div class="review-stats review-stats--solo">
+            <div class="review-stat review-stat--xl">
+              <span class="review-stat__value">Daily</span>
+              <span class="review-stat__label">AI tools in dev &amp; learning</span>
+            </div>
+          </div>
+          <ul class="review-list">
+            <li>Used AI tools <span class="review-hl">daily</span> for development and learning</li>
+            <li>Improved <span class="review-hl">productivity</span> and problem-solving efficiency</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="review-row reveal">
+        <div class="review-row__inner">
+          <p class="review-row__eyebrow">Team</p>
+          <h2 class="review-row__title">Recognition &amp; Appreciation</h2>
+          <p class="review-row__pull">Knowledge sharing &amp; <span class="review-hl">Dependency Injection in KMP</span> session for the mobile team.</p>
+          <ul class="review-list">
+            <li><span class="review-hl">Public praise</span> from manager for knowledge sharing session</li>
+            <li>Presented <span class="review-hl">Dependency Injection in KMP</span> to mobile team</li>
+            <li>High engagement and <span class="review-hl">positive feedback</span> from team members</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="review-row review-row--goals reveal">
+        <div class="review-row__inner">
+          <p class="review-row__eyebrow">Forward</p>
+          <h2 class="review-row__title"><i class="fa-solid fa-bullseye" aria-hidden="true"></i> Next Year Goals (2026)</h2>
+          <ul class="review-list">
+            <li>Learn and apply <span class="review-hl">system design</span> principles in real projects</li>
+            <li>Take ownership of <span class="review-hl">feature / module level architecture</span></li>
+            <li>Master <span class="review-hl">AI-driven development</span> practices</li>
+            <li>Explore <span class="review-hl">AI feature integration</span> into products</li>
+          </ul>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <a href="index.html" class="footer-logo">SI<span class="accent">.</span></a>
+        <div class="footer-socials">
+          <a href="https://github.com/shamiul110107" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="https://linkedin.com/in/shamiul110107" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="mailto:shamiulcse.pust@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+        <p class="footer-copy">&copy; 2026 Md Shamiul Islam. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const navToggle = document.getElementById('navToggle');
+    const navMenu = document.getElementById('navMenu');
+    navToggle.addEventListener('click', () => {
+      navToggle.classList.toggle('active');
+      navMenu.classList.toggle('open');
+    });
+    navMenu.querySelectorAll('.nav-link').forEach((link) => {
+      link.addEventListener('click', () => {
+        navToggle.classList.remove('active');
+        navMenu.classList.remove('open');
+      });
+    });
+
+    const YEAR_REVIEW_STORAGE_KEY = 'yearReviewUnlocked';
+    const REVIEW_PASSWORD_SHA256 =
+      'c60d771b500d1b4f8a1c8438b0e0f8d89ee8bac756a768efd4057b7011a367d5';
+
+    const reviewGate = document.getElementById('reviewGate');
+    const reviewContent = document.getElementById('reviewContent');
+    const reviewForm = document.getElementById('reviewUnlockForm');
+    const reviewPassword = document.getElementById('reviewPassword');
+    const reviewGateError = document.getElementById('reviewGateError');
+    const reviewLockAgain = document.getElementById('reviewLockAgain');
+
+    async function sha256Hex(text) {
+      const enc = new TextEncoder().encode(text);
+      const buf = await crypto.subtle.digest('SHA-256', enc);
+      return Array.from(new Uint8Array(buf))
+        .map((b) => b.toString(16).padStart(2, '0'))
+        .join('');
+    }
+
+    function showReviewUnlocked() {
+      reviewGate.hidden = true;
+      reviewContent.hidden = false;
+      reviewGateError.hidden = true;
+      reviewGateError.textContent = 'Incorrect password.';
+      requestAnimationFrame(() => {
+        reviewContent.querySelectorAll('.review-row.reveal').forEach((el) => {
+          el.classList.add('visible');
+        });
+      });
+    }
+
+    function showReviewLocked() {
+      sessionStorage.removeItem(YEAR_REVIEW_STORAGE_KEY);
+      reviewGate.hidden = false;
+      reviewContent.hidden = true;
+      reviewPassword.value = '';
+    }
+
+    if (sessionStorage.getItem(YEAR_REVIEW_STORAGE_KEY) === '1') {
+      showReviewUnlocked();
+    }
+
+    reviewForm.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const pwd = reviewPassword.value.trim();
+      const hash = await sha256Hex(pwd);
+      if (hash === REVIEW_PASSWORD_SHA256) {
+        sessionStorage.setItem(YEAR_REVIEW_STORAGE_KEY, '1');
+        showReviewUnlocked();
+      } else {
+        reviewGateError.hidden = false;
+      }
+    });
+
+    reviewLockAgain.addEventListener('click', () => {
+      showReviewLocked();
+    });
+  </script>
+</body>
+</html>

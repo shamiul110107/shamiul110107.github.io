@@ -21,7 +21,6 @@
     <img class="poster__frame" src="frame.png" alt="" width="738" height="1024" decoding="async" />
     <div class="poster__slot" id="photoSlot">
       <span class="poster__placeholder">আপলোড করলে ফটো এখানে দেখা যাবে</span>
-      <img id="userPhoto" alt="আপনার ছবি" hidden />
     </div>
   </div>
 
@@ -32,10 +31,10 @@
 
   <script>
     const fileInput = document.getElementById('fileInput');
-    const userPhoto = document.getElementById('userPhoto');
     const photoSlot = document.getElementById('photoSlot');
     const clearBtn = document.getElementById('clearBtn');
     let objectUrl = null;
+    let userPhoto = null;
 
     function revoke() {
       if (objectUrl) {
@@ -44,19 +43,29 @@
       }
     }
 
+    function removePhotoEl() {
+      if (userPhoto && userPhoto.parentNode) {
+        userPhoto.parentNode.removeChild(userPhoto);
+      }
+      userPhoto = null;
+    }
+
     fileInput.addEventListener('change', () => {
       const file = fileInput.files && fileInput.files[0];
       revoke();
+      removePhotoEl();
       if (!file || !file.type.startsWith('image/')) {
-        userPhoto.hidden = true;
-        userPhoto.removeAttribute('src');
         photoSlot.classList.remove('has-photo');
         clearBtn.disabled = true;
         return;
       }
       objectUrl = URL.createObjectURL(file);
+      userPhoto = document.createElement('img');
+      userPhoto.className = 'poster__user-img';
+      userPhoto.alt = '';
+      userPhoto.decoding = 'async';
       userPhoto.onload = () => {
-        userPhoto.hidden = false;
+        photoSlot.appendChild(userPhoto);
         photoSlot.classList.add('has-photo');
         clearBtn.disabled = false;
       };
@@ -66,8 +75,7 @@
     clearBtn.addEventListener('click', () => {
       revoke();
       fileInput.value = '';
-      userPhoto.hidden = true;
-      userPhoto.removeAttribute('src');
+      removePhotoEl();
       photoSlot.classList.remove('has-photo');
       clearBtn.disabled = true;
     });

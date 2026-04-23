@@ -1,10 +1,10 @@
 /* Haripur reunion photo frame — mobile-first */
 :root {
-  /* Tune if photo doesn’t line up with the grey box (percent of poster box) */
-  --slot-top: 22%;
-  --slot-left: 10%;
-  --slot-width: 80%;
-  --slot-height: 46%;
+  /* Matched to grey photo area in frame.png (738×1024) */
+  --slot-top: 17.1%;
+  --slot-left: 15.31%;
+  --slot-width: 68.83%;
+  --slot-height: 50.1%;
   --poster-max: min(100vw - 32px, 440px);
 }
 
@@ -118,14 +118,16 @@ body {
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 12px 40px rgba(0, 0, 0, 0.45);
+  /* Slot % line up with the frame image edges (same aspect as art) */
+  background: #1b3324;
 }
 
 .poster__frame {
   display: block;
   width: 100%;
   height: 100%;
-  object-fit: contain;
-  object-position: center;
+  object-fit: cover;
+  object-position: center top;
   pointer-events: none;
   user-select: none;
 }
@@ -139,10 +141,10 @@ body {
   overflow: hidden;
   border-radius: 2px;
   z-index: 2;
-  background: #3a3a3a;
+  background: transparent;
 }
 
-.poster__slot img {
+.poster__user-img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -157,10 +159,16 @@ body {
   align-items: center;
   justify-content: center;
   font-size: clamp(0.7rem, 2.5vw, 0.85rem);
-  color: rgba(255, 255, 255, 0.45);
+  color: rgba(255, 255, 255, 0.88);
   text-align: center;
-  padding: 8px;
+  padding: 10px 12px;
   pointer-events: none;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.85);
+  background: rgba(0, 0, 0, 0.22);
+  margin: auto;
+  max-width: 88%;
+  border-radius: 8px;
+  align-self: center;
 }
 
 .poster__slot.has-photo .poster__placeholder {

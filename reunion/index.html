@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#0d1f14" />
+  <title>পুনর্মিলনী ফটো ফ্রেম — হরিপুর উচ্চ বিদ্যালয়</title>
+  <link rel="stylesheet" href="reunion.css" />
+</head>
+<body>
+  <h1 class="page-title">হরিপুর উচ্চ বিদ্যালয় · পুনর্মিলনী ফ্রেম</h1>
+  <p class="page-hint">ফটো আপলোড করুন — এটি ফ্রেমের মাঝের জায়গায় স্বয়ংক্রিয়ভাবে বসবে। মোবাইল ও ডেস্কটপে কাজ করে। GitHub Pages এ চলে (কোনো সার্ভার লাগে না)।</p>
+
+  <div class="controls">
+    <input type="file" id="fileInput" class="visually-hidden" accept="image/*" />
+    <label for="fileInput" class="upload-btn">ফটো বাছাই করুন / Choose photo</label>
+    <button type="button" class="clear-btn" id="clearBtn" disabled>ফটো সরান / Remove photo</button>
+  </div>
+
+  <div class="poster" id="poster" aria-label="পুনর্মিলনী ফ্রেম">
+    <img class="poster__frame" src="frame.png" alt="" width="738" height="1024" decoding="async" />
+    <div class="poster__slot" id="photoSlot">
+      <span class="poster__placeholder">আপলোড করলে ফটো এখানে দেখা যাবে</span>
+      <img id="userPhoto" alt="আপনার ছবি" hidden />
+    </div>
+  </div>
+
+  <p class="footer-note">
+    ছবি শুধু আপনার ব্রাউজারে থাকে, সার্ভারে আপলোড হয় না। ফ্রেমের সাথে মিল না হলে
+    <code>reunion.css</code> এর <code>--slot-*</code> মান সামান্য বদলে দিন।
+  </p>
+
+  <script>
+    const fileInput = document.getElementById('fileInput');
+    const userPhoto = document.getElementById('userPhoto');
+    const photoSlot = document.getElementById('photoSlot');
+    const clearBtn = document.getElementById('clearBtn');
+    let objectUrl = null;
+
+    function revoke() {
+      if (objectUrl) {
+        URL.revokeObjectURL(objectUrl);
+        objectUrl = null;
+      }
+    }
+
+    fileInput.addEventListener('change', () => {
+      const file = fileInput.files && fileInput.files[0];
+      revoke();
+      if (!file || !file.type.startsWith('image/')) {
+        userPhoto.hidden = true;
+        userPhoto.removeAttribute('src');
+        photoSlot.classList.remove('has-photo');
+        clearBtn.disabled = true;
+        return;
+      }
+      objectUrl = URL.createObjectURL(file);
+      userPhoto.onload = () => {
+        userPhoto.hidden = false;
+        photoSlot.classList.add('has-photo');
+        clearBtn.disabled = false;
+      };
+      userPhoto.src = objectUrl;
+    });
+
+    clearBtn.addEventListener('click', () => {
+      revoke();
+      fileInput.value = '';
+      userPhoto.hidden = true;
+      userPhoto.removeAttribute('src');
+      photoSlot.classList.remove('has-photo');
+      clearBtn.disabled = true;
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Md Shamiul Islam — Senior Mobile Developer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">SI<span class="accent">.</span></a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+        <li><a href="ai-workflow.html" class="nav-link">AI Workflow</a></li>
+        <li><a href="recent-learning.html" class="nav-link">Recent Learning</a></li>
+        <li><a href="year-review.html" class="nav-link">Year Review</a></li>
+        <li><a href="#resume" class="nav-link nav-btn">Resume</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <p class="hero-greeting">Hello, I'm</p>
+      <h1 class="hero-name">Md Shamiul Islam</h1>
+      <h2 class="hero-title">
+        <span class="typing-wrapper">
+          <span class="typing-text" id="typingText"></span>
+          <span class="typing-cursor">|</span>
+        </span>
+      </h2>
+      <p class="hero-description">
+        Experienced and dedicated iOS Developer with 9+ years of expertise in analysis, design,
+        development, and testing of iPhone and iPad applications. Passionate about clean architecture,
+        cross-platform development with KMP, and delivering high-quality mobile experiences.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">View My Work</a>
+        <a href="#contact" class="btn btn-outline">Get In Touch</a>
+      </div>
+      <div class="hero-socials">
+        <a href="https://github.com/shamiul110107" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://linkedin.com/in/shamiul110107" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="mailto:shamiulcse.pust@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+        <a href="tel:+66986950900" aria-label="Phone"><i class="fa-solid fa-phone"></i></a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-image-wrapper">
+        <div class="hero-image-placeholder">
+          <i class="fa-solid fa-user"></i>
+          <span>Your Photo</span>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="section" id="about">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            I'm a dedicated Senior Mobile Developer with <strong>9+ years</strong> of experience in
+            analysis, design, development, testing, and implementing various iPhone and iPad applications.
+            Experienced in both Objective-C and Swift, with cross-platform development expertise in
+            Kotlin Multiplatform (KMP).
+          </p>
+          <p>
+            I've contributed to large-scale apps including ones with over 50 million downloads,
+            and I'm passionate about clean code, robust architecture, and mentoring teams
+            to deliver high-quality software on time.
+          </p>
+          <div class="about-stats">
+            <div class="stat">
+              <span class="stat-number" data-target="9">0</span><span class="stat-suffix">+</span>
+              <span class="stat-label">Years Experience</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number" data-target="50">0</span><span class="stat-suffix">M+</span>
+              <span class="stat-label">App Downloads</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number" data-target="80">0</span><span class="stat-suffix">%+</span>
+              <span class="stat-label">Test Coverage</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-details">
+          <div class="detail-card">
+            <i class="fa-solid fa-location-dot"></i>
+            <div>
+              <h4>Location</h4>
+              <p>Bangkok, Thailand</p>
+            </div>
+          </div>
+          <div class="detail-card">
+            <i class="fa-solid fa-briefcase"></i>
+            <div>
+              <h4>Currently</h4>
+              <p>Senior iOS Developer @ Seven Peaks</p>
+            </div>
+          </div>
+          <div class="detail-card">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <div>
+              <h4>Education</h4>
+              <p>B.Sc. Computer Science & Engineering</p>
+            </div>
+          </div>
+          <div class="detail-card">
+            <i class="fa-solid fa-language"></i>
+            <div>
+              <h4>Languages</h4>
+              <p>English (Fluent), Bangla (Native)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="section section-alt" id="skills">
+    <div class="container">
+      <h2 class="section-title">Skills & Technologies</h2>
+      <div class="skills-grid">
+
+        <div class="skill-category">
+          <h3><i class="fa-solid fa-mobile-screen-button"></i> iOS Development</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Swift</span>
+            <span class="skill-tag">Objective-C</span>
+            <span class="skill-tag">SwiftUI</span>
+            <span class="skill-tag">UIKit</span>
+            <span class="skill-tag">Auto Layout</span>
+            <span class="skill-tag">Storyboard</span>
+            <span class="skill-tag">RxSwift</span>
+            <span class="skill-tag">Combine</span>
+            <span class="skill-tag">Async/Await</span>
+            <span class="skill-tag">GCD</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3><i class="fa-solid fa-shuffle"></i> Cross-Platform</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Kotlin Multiplatform (KMP)</span>
+            <span class="skill-tag">Kotlin</span>
+            <span class="skill-tag">Flutter (Basic)</span>
+            <span class="skill-tag">Ktor</span>
+            <span class="skill-tag">Koin</span>
+            <span class="skill-tag">Coil</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3><i class="fa-solid fa-layer-group"></i> Architecture & Patterns</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Clean Architecture</span>
+            <span class="skill-tag">MVVM</span>
+            <span class="skill-tag">MVC</span>
+            <span class="skill-tag">SOLID</span>
+            <span class="skill-tag">KISS</span>
+            <span class="skill-tag">DRY</span>
+            <span class="skill-tag">Factory</span>
+            <span class="skill-tag">Facade</span>
+            <span class="skill-tag">Adapter</span>
+            <span class="skill-tag">Singleton</span>
+            <span class="skill-tag">Observer</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3><i class="fa-solid fa-database"></i> Data & Storage</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">CoreData</span>
+            <span class="skill-tag">SwiftData</span>
+            <span class="skill-tag">Realm</span>
+            <span class="skill-tag">Alamofire</span>
+            <span class="skill-tag">In-App Purchases</span>
+            <span class="skill-tag">SPM</span>
+            <span class="skill-tag">CocoaPods</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3><i class="fa-solid fa-rocket"></i> CI/CD & Analytics</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Azure Pipelines</span>
+            <span class="skill-tag">Fastlane</span>
+            <span class="skill-tag">Jenkins</span>
+            <span class="skill-tag">Firebase</span>
+            <span class="skill-tag">Crashlytics</span>
+            <span class="skill-tag">Mixpanel</span>
+            <span class="skill-tag">Branch.io</span>
+            <span class="skill-tag">Braze</span>
+            <span class="skill-tag">SonarCloud</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3><i class="fa-solid fa-toolbox"></i> Tools & Distribution</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Git</span>
+            <span class="skill-tag">Bitbucket</span>
+            <span class="skill-tag">JIRA</span>
+            <span class="skill-tag">Xcode</span>
+            <span class="skill-tag">TestFlight</span>
+            <span class="skill-tag">App Store</span>
+            <span class="skill-tag">SwiftLint</span>
+            <span class="skill-tag">Unit Testing</span>
+            <span class="skill-tag">UI Testing</span>
+          </div>
+        </div>
+
+        <div class="skill-category skill-category-ai">
+          <h3><i class="fa-solid fa-wand-magic-sparkles"></i> AI & Assistants</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Cursor AI Editor</span>
+            <span class="skill-tag">Claude Code</span>
+            <span class="skill-tag">Alex Sidebar</span>
+            <span class="skill-tag">Xcode AI</span>
+            <span class="skill-tag">Gemini</span>
+            <span class="skill-tag">AI-Assisted Development</span>
+            <span class="skill-tag">Prompt Engineering</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section class="section" id="experience">
+    <div class="container">
+      <h2 class="section-title">Experience</h2>
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3>Senior iOS Developer</h3>
+              <span class="timeline-company">Seven Peaks</span>
+            </div>
+            <span class="timeline-date">Aug 2022 — Present &middot; Bangkok, Thailand</span>
+            <ul class="timeline-details">
+              <li>Led development of core and reusable components for large-scale e-commerce apps such as Central and Tops, improving feature delivery speed and maintainability</li>
+              <li>Ensured high-quality code through rigorous unit testing (80%+ coverage) and adherence to best coding practices</li>
+              <li>Streamlined CI/CD processes using Azure Pipelines, Fastlane, and SonarCloud, significantly improving release efficiency</li>
+              <li>Collaborated in cross-functional teams, contributing to sprint planning, code reviews, and retrospectives</li>
+              <li>Conducted knowledge-sharing sessions and mentored junior developers to strengthen team capability</li>
+            </ul>
+            <div class="timeline-tags">
+              <span>Swift</span><span>SwiftUI</span><span>Clean Architecture</span><span>Azure CI/CD</span><span>SonarCloud</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3>Senior iOS Developer</h3>
+              <span class="timeline-company">Brain Station 23 Ltd.</span>
+            </div>
+            <span class="timeline-date">Aug 2019 — Jul 2022 &middot; Dhaka, Bangladesh</span>
+            <ul class="timeline-details">
+              <li>Worked on popular mobile apps, including one with over 50 million downloads, focusing on performance, stability, and maintainability</li>
+              <li>Designed and built new features and UI components for e-commerce apps to improve user experience</li>
+              <li>Ensured clean and well-structured code by adhering to Clean Code, MVVM, and MVC patterns with team code reviews</li>
+              <li>Collaborated closely with product managers and QA engineers to deliver updates on time with fewer bugs</li>
+              <li>Used feedback and analytics to identify areas for improvement and enhance app quality</li>
+            </ul>
+            <div class="timeline-tags">
+              <span>Swift</span><span>UIKit</span><span>MVVM</span><span>Clean Code</span><span>E-Commerce</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3>Software Engineer (iOS)</h3>
+              <span class="timeline-company">Datasoft System Bangladesh Limited</span>
+            </div>
+            <span class="timeline-date">Jun 2016 — Aug 2019 &middot; Dhaka, Bangladesh</span>
+            <ul class="timeline-details">
+              <li>Successfully developed 4+ iOS apps in Swift and Objective-C</li>
+              <li>Worked both as a team member and individually on diverse projects</li>
+              <li>Worked on Augmented Reality technologies</li>
+              <li>Delivered projects for international clients including Nissan, Infiniti, and Hitachi</li>
+            </ul>
+            <div class="timeline-tags">
+              <span>Swift</span><span>Objective-C</span><span>AR</span><span>CocoaPods</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section class="section section-alt" id="education">
+    <div class="container">
+      <h2 class="section-title">Education</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3>B.Sc. Computer Science and Engineering</h3>
+              <span class="timeline-company">Pabna University of Science and Technology</span>
+            </div>
+            <span class="timeline-date">2011 — 2014 &middot; Pabna, Bangladesh</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifications Section -->
+  <section class="section" id="certifications">
+    <div class="container">
+      <h2 class="section-title">Certifications</h2>
+      <div class="certifications-grid">
+
+        <a href="https://www.udemy.com/certificate/UC-6cf98e6c-dcef-479d-8e73-0febc46ac552/" target="_blank" rel="noopener" class="cert-card cert-card-link">
+          <div class="cert-icon cert-icon-anthropic"><i class="fa-solid fa-robot"></i></div>
+          <div class="cert-info">
+            <h3>Claude Code Masterclass</h3>
+            <span class="cert-issuer">Udemy</span>
+            <p class="cert-desc">Advanced AI-assisted development: Plan Mode, Specs, Context Engineering, MCP Servers, Subagents, and GitHub Integration.</p>
+          </div>
+          <i class="fa-solid fa-arrow-up-right-from-square cert-card-arrow"></i>
+        </a>
+
+        <a href="https://learn.microsoft.com/en-us/users/shamiulislam-6636/credentials/cc8b5999b37b862" target="_blank" rel="noopener" class="cert-card cert-card-link">
+          <div class="cert-icon cert-icon-microsoft"><i class="fa-brands fa-microsoft"></i></div>
+          <div class="cert-info">
+            <h3>Microsoft Certified: Azure Fundamentals</h3>
+            <span class="cert-issuer">Microsoft Learn</span>
+            <p class="cert-desc">Validate foundational cloud concepts and Azure services.</p>
+          </div>
+          <i class="fa-solid fa-arrow-up-right-from-square cert-card-arrow"></i>
+        </a>
+
+        <a href="https://learn.microsoft.com/en-gb/users/shamiulislam-6636/credentials/22256cb8c1475095" target="_blank" rel="noopener" class="cert-card cert-card-link">
+          <div class="cert-icon cert-icon-microsoft"><i class="fa-brands fa-microsoft"></i></div>
+          <div class="cert-info">
+            <h3>Microsoft Certified: Azure AI Fundamentals</h3>
+            <span class="cert-issuer">Microsoft Learn</span>
+            <p class="cert-desc">Demonstrate knowledge of AI and machine learning workloads on Azure.</p>
+          </div>
+          <i class="fa-solid fa-arrow-up-right-from-square cert-card-arrow"></i>
+        </a>
+
+        <a href="https://achieve.snowflake.com/5010ed98-4ec3-49d6-976b-da34773f5efe" target="_blank" rel="noopener" class="cert-card cert-card-link">
+          <div class="cert-icon cert-icon-snowflake"><i class="fa-solid fa-snowflake"></i></div>
+          <div class="cert-info">
+            <h3>Hands-On Essentials: Data Warehousing Workshop</h3>
+            <span class="cert-issuer">Snowflake</span>
+            <p class="cert-desc">Data warehousing fundamentals and Snowflake data cloud.</p>
+          </div>
+          <i class="fa-solid fa-arrow-up-right-from-square cert-card-arrow"></i>
+        </a>
+
+        <a href="https://achieve.snowflake.com/e2f43c33-6d28-4b36-ba32-c89b05fa5dae" target="_blank" rel="noopener" class="cert-card cert-card-link">
+          <div class="cert-icon cert-icon-snowflake"><i class="fa-solid fa-snowflake"></i></div>
+          <div class="cert-info">
+            <h3>Hands-On Essentials: Collaboration, Marketplace & Cost Estimation</h3>
+            <span class="cert-issuer">Snowflake</span>
+            <p class="cert-desc">Collaboration, Snowflake Marketplace, and cost estimation workshops.</p>
+          </div>
+          <i class="fa-solid fa-arrow-up-right-from-square cert-card-arrow"></i>
+        </a>
+
+        <a href="https://www.udemy.com/certificate/UC-326e2eaf-2217-41e6-bddb-6639e33aae30/" target="_blank" rel="noopener" class="cert-card cert-card-link">
+          <div class="cert-icon cert-icon-udemy"><i class="fa-solid fa-mobile-screen-button"></i></div>
+          <div class="cert-info">
+            <h3>Multi-Modular Ecommerce App for Android & iOS (KMP)</h3>
+            <span class="cert-issuer">Udemy</span>
+            <p class="cert-desc">Kotlin Multiplatform e-commerce app development for Android and iOS.</p>
+          </div>
+          <i class="fa-solid fa-arrow-up-right-from-square cert-card-arrow"></i>
+        </a>
+
+        <a href="https://www.udemy.com/certificate/UC-0229c666-5a77-4b78-b8ac-c67b5b8e119f/" target="_blank" rel="noopener" class="cert-card cert-card-link">
+          <div class="cert-icon cert-icon-udemy"><i class="fa-solid fa-code"></i></div>
+          <div class="cert-info">
+            <h3>Complete Kotlin Development Masterclass</h3>
+            <span class="cert-issuer">Udemy</span>
+            <p class="cert-desc">Comprehensive Kotlin programming from fundamentals to advanced.</p>
+          </div>
+          <i class="fa-solid fa-arrow-up-right-from-square cert-card-arrow"></i>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="section section-alt" id="projects">
+    <div class="container">
+      <h2 class="section-title">Featured Projects</h2>
+      <div class="projects-grid">
+
+        <article class="project-card">
+          <div class="project-image">
+            <img src="images/central.jpg" alt="Central App" />
+            <div class="project-overlay">
+              <a href="https://apps.apple.com/th/app/central-app-chinese-new-year/id419292319" target="_blank" class="project-link" aria-label="View on App Store"><i class="fa-brands fa-app-store-ios"></i></a>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>Central App</h3>
+            <p>Thailand's leading department store shopping app with 8.3K+ ratings. Built core reusable components, seamless payment flows, and real-time order tracking for millions of users.</p>
+            <div class="project-tags">
+              <span>Swift</span><span>SwiftUI</span><span>Clean Architecture</span><span>Azure CI/CD</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-image">
+            <img src="images/major-cineplex.jpg" alt="Major Cineplex" />
+            <div class="project-overlay">
+              <a href="https://apps.apple.com/th/app/major-cineplex/id465350288" target="_blank" class="project-link" aria-label="View on App Store"><i class="fa-brands fa-app-store-ios"></i></a>
+            </div>
+          </div>
+          <div class="project-info">
+            <span class="project-badge">Recent</span>
+            <h3>Major Cineplex</h3>
+            <p>Thailand's #1 cinema booking app with movie search, seat selection, e-ticketing, M Pass subscription, and multiple payment integrations including TrueWallet.</p>
+            <div class="project-tags">
+              <span>Swift</span><span>SwiftUI</span><span>Clean Architecture</span><span>In-App Purchase</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-image">
+            <img src="images/mygp.jpg" alt="MyGP Bangladesh" />
+            <div class="project-overlay">
+              <a href="https://apps.apple.com/us/app/mygp-bangladesh/id1128691313" target="_blank" class="project-link" aria-label="View on App Store"><i class="fa-brands fa-app-store-ios"></i></a>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>MyGP Bangladesh</h3>
+            <p>Grameenphone's flagship telecom app with 97K+ ratings and 4.6 stars. Recharge, entertainment streaming, account management, and AI-powered recommendations for 50M+ users.</p>
+            <div class="project-tags">
+              <span>Swift</span><span>UIKit</span><span>MVVM</span><span>Analytics</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-image">
+            <img src="images/nissan.jpg" alt="Nissan Driver's Guide" />
+            <div class="project-overlay">
+              <a href="https://apps.apple.com/gb/app/nissan-drivers-guide/id913672032" target="_blank" class="project-link" aria-label="View on App Store"><i class="fa-brands fa-app-store-ios"></i></a>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>Nissan Driver's Guide</h3>
+            <p>Augmented Reality-based driver's guide app for Nissan vehicles with 411+ ratings. Point your camera at vehicle controls to get interactive information and warning light descriptions.</p>
+            <div class="project-tags">
+              <span>Swift</span><span>Objective-C</span><span>ARKit</span><span>Camera</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-image">
+            <img src="images/infiniti.jpg" alt="Infiniti Driver's Guide" />
+            <div class="project-overlay">
+              <a href="https://apps.apple.com/nl/app/infiniti-drivers-guide-ch/id1330552703?l=en-GB" target="_blank" class="project-link" aria-label="View on App Store"><i class="fa-brands fa-app-store-ios"></i></a>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>Infiniti Driver's Guide</h3>
+            <p>AR-powered driver's guide for Infiniti luxury vehicles (Q30, Q50, Q60, Q70, QX series). Camera-based button recognition, warning lights, and quick reference guides.</p>
+            <div class="project-tags">
+              <span>Swift</span><span>Objective-C</span><span>ARKit</span><span>Augmented Reality</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-image">
+            <img src="images/aircloud.jpg" alt="airCloud Pro" />
+            <div class="project-overlay">
+              <a href="https://apps.apple.com/au/app/aircloud-pro/id1498567326" target="_blank" class="project-link" aria-label="View on App Store"><i class="fa-brands fa-app-store-ios"></i></a>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>airCloud Pro</h3>
+            <p>IoT-powered air conditioning management app for Hitachi VRF systems. Live dashboard, remote control, scheduling, troubleshooting, and multi-user access for enterprise clients.</p>
+            <div class="project-tags">
+              <span>Swift</span><span>Objective-C</span><span>IoT</span><span>Enterprise</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Resume Section -->
+  <section class="section section-alt" id="resume">
+    <div class="container">
+      <h2 class="section-title">Resume</h2>
+      <div class="resume-cta">
+        <div class="resume-card">
+          <i class="fa-solid fa-file-pdf"></i>
+          <h3>Download My Resume</h3>
+          <p>Get a detailed overview of my 9+ years of experience, education, skills, and achievements in PDF format.</p>
+          <a href="./resume.pdf" class="btn btn-primary" target="_blank" rel="noopener">
+            <i class="fa-solid fa-download"></i> Download PDF
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section" id="contact">
+    <div class="container">
+      <h2 class="section-title">Get In Touch</h2>
+      <div class="contact-info contact-info-standalone">
+        <p class="contact-intro">
+          I'm always open to discussing new projects, creative ideas, or opportunities
+          to be part of something great. Feel free to reach out!
+        </p>
+        <div class="contact-methods">
+          <a href="mailto:shamiulcse.pust@gmail.com" class="contact-method">
+            <i class="fa-solid fa-envelope"></i>
+            <div>
+              <h4>Email</h4>
+              <span>shamiulcse.pust@gmail.com</span>
+            </div>
+          </a>
+          <a href="tel:+66986950900" class="contact-method">
+            <i class="fa-solid fa-phone"></i>
+            <div>
+              <h4>Phone</h4>
+              <span>+66 098 695 0900</span>
+            </div>
+          </a>
+          <a href="https://linkedin.com/in/shamiul110107" target="_blank" rel="noopener" class="contact-method">
+            <i class="fa-brands fa-linkedin-in"></i>
+            <div>
+              <h4>LinkedIn</h4>
+              <span>linkedin.com/in/shamiul110107</span>
+            </div>
+          </a>
+          <a href="https://github.com/shamiul110107" target="_blank" rel="noopener" class="contact-method">
+            <i class="fa-brands fa-github"></i>
+            <div>
+              <h4>GitHub</h4>
+              <span>github.com/shamiul110107</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <a href="#hero" class="footer-logo">SI<span class="accent">.</span></a>
+        <div class="footer-socials">
+          <a href="https://github.com/shamiul110107" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="https://linkedin.com/in/shamiul110107" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="mailto:shamiulcse.pust@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+        <p class="footer-copy">&copy; 2026 Md Shamiul Islam. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

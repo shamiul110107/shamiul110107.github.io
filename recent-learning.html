@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Recent Learning — Md Shamiul Islam</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="recent-learning.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+</head>
+<body>
+  <nav class="navbar scrolled" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">SI<span class="accent">.</span></a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="index.html#projects" class="nav-link">Projects</a></li>
+        <li><a href="ai-workflow.html" class="nav-link">AI Workflow</a></li>
+        <li><a href="year-review.html" class="nav-link">Year Review</a></li>
+        <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+        <li><a href="index.html#resume" class="nav-link nav-btn">Resume</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="learning-hero">
+    <div class="container">
+      <div class="learning-hero-badge"><i class="fa-solid fa-book-open"></i> Learning</div>
+      <h1>My Recent Learning</h1>
+      <p class="learning-hero-subtitle">
+        Courses, topics, and resources I'm currently learning or have recently completed to stay sharp and grow as a developer.
+      </p>
+    </div>
+  </section>
+
+  <section class="section" id="learning">
+    <div class="container">
+      <h2 class="section-title">In Progress & Recent</h2>
+      <div class="learning-grid">
+
+        <div class="learning-card">
+          <div class="learning-card-icon"><i class="fa-solid fa-robot"></i></div>
+          <div class="learning-card-content">
+            <span class="learning-card-badge learning-card-badge-done">Done</span>
+            <h3>Claude Code Masterclass</h3>
+            <p>Advanced AI-assisted development techniques:</p>
+            <ul class="learning-card-list">
+              <li>📋 <strong>Plan Mode</strong> – Breaking down complex features into structured implementation plans before writing code.</li>
+              <li>📝 <strong>Specs</strong> – Using detailed specifications to ensure AI generates code that aligns with architecture and requirements.</li>
+              <li>🧠 <strong>Context Engineering</strong> – Providing the right project context so AI produces more accurate and maintainable code.</li>
+              <li>🔌 <strong>MCP Servers</strong> – Connecting AI to external tools, documentation, databases, and development environments.</li>
+              <li>🤖 <strong>Subagents</strong> – Delegating specialized tasks (planning, implementation, code review, testing) to dedicated AI agents.</li>
+              <li>🛠️ <strong>Commands, Tools &amp; Hooks</strong> – Automating repetitive development tasks and customizing AI workflows.</li>
+              <li>🌐 <strong>GitHub Integration</strong> – Using AI for code reviews, repository analysis, and development workflows.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="learning-card">
+          <div class="learning-card-icon"><i class="fa-brands fa-node-js"></i></div>
+          <div class="learning-card-content">
+            <span class="learning-card-badge">In Progress</span>
+            <h3>BackEnd Development with Node.js</h3>
+            <p>Server-side development with Node.js, building REST APIs and backend services.</p>
+          </div>
+        </div>
+
+        <div class="learning-card">
+          <div class="learning-card-icon"><i class="fa-brands fa-react"></i></div>
+          <div class="learning-card-content">
+            <span class="learning-card-badge">In Progress</span>
+            <h3>React Native</h3>
+            <p>Cross-platform mobile development with React Native for iOS and Android.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="container" style="text-align: center;">
+      <a href="index.html" class="btn btn-primary"><i class="fa-solid fa-arrow-left"></i> Back to Portfolio</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <a href="index.html" class="footer-logo">SI<span class="accent">.</span></a>
+        <div class="footer-socials">
+          <a href="https://github.com/shamiul110107" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="https://linkedin.com/in/shamiul110107" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="mailto:shamiulcse.pust@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+        <p class="footer-copy">&copy; 2026 Md Shamiul Islam. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const navToggle = document.getElementById('navToggle');
+    const navMenu = document.getElementById('navMenu');
+    navToggle.addEventListener('click', () => {
+      navToggle.classList.toggle('active');
+      navMenu.classList.toggle('open');
+    });
+    navMenu.querySelectorAll('.nav-link').forEach(link => {
+      link.addEventListener('click', () => {
+        navToggle.classList.remove('active');
+        navMenu.classList.remove('open');
+      });
+    });
+    const revealTargets = document.querySelectorAll('.learning-card');
+    revealTargets.forEach(el => el.classList.add('reveal'));
+    const observer = new IntersectionObserver(
+      entries => entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); }),
+      { threshold: 0.15, rootMargin: '0px 0px -40px 0px' }
+    );
+    revealTargets.forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
